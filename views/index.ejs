@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>DjurFakta</title>
+        
+        
+
+    </head>
+
+    <body>
+        <div>
+            <button id="horsebtn" type="button" >HORSE FACTS</button>
+        </div>
+        <%if(locals.text && djur === 'horse'){%>
+            <div>
+                <span><%= text %></span> 
+            </div>   
+        <%} %>
+        <div>
+                <button id="catbtn" type="button" >CAT FACTS</button>
+            </div>
+            <%if(locals.text && djur === 'cat'){%>
+                <div>
+                    <span><%= text %></span> 
+                </div>   
+            <%} %>
+        <div>
+                <button id="dogbtn" type="button" >DOG FACTS</button>
+            </div>
+            <%if(locals.text && djur === 'dog'){%>
+                <div>
+                    <span><%= text %></span> 
+                </div>   
+            <%} %>
+    </body>
+    <footer>
+        <script src="/js/index.js"></script>
+    </footer>
+
+</html>
